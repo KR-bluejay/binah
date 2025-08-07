@@ -1,0 +1,27 @@
+[workspace]
+resolver = "3"
+members = ["crates/binah-core"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+
+[workspace.dependencies]
+petgraph = { version = "0.8.2" }
+num-traits = { version = "0.2" }
+
+[package]
+name = "binah"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+binah-core = { path = "crates/binah-core" }
+
+[[example]]
+name = "simple_add"
+path = "examples/simple_add.rs"
+
+[[example]]
+name = "broadcast_test"
+path = "examples/broadcast_test.rs"

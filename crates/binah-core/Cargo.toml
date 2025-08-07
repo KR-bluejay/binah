@@ -1,0 +1,8 @@
+[package]
+name = "binah-core"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+petgraph = { workspace = true }
+num-traits = { workspace = true }
